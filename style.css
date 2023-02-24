@@ -1,7 +1,25 @@
 body {
     margin: 0;
+    background-image: url("back-ground.png");
+    background-size: 100%;
 }
 
 .logo-img {
-    height: 70px;
+    margin: 7px;
+    height: 100px;
+}
+
+.Header {
+    height: 150px;
+    /* background-image: url("Header_line.png");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+.heder-line {
+    display: flex;
+}
+
+.heder-links {
+    color: #fff;
 }
