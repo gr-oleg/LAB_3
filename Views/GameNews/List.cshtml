@@ -1,0 +1,27 @@
+﻿@using Mikater_project_1.Data.Models
+@model IEnumerable<GameNews>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h2>Всі новини</h2>
+    @{
+        foreach (var news in Model)
+        {
+            <div>
+                <h3>@news.Title</h3>
+                <p>@news.Description</p>
+            </div>
+        }
+    }
+</body>
+</html>
