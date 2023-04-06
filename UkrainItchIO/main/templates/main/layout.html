@@ -1,6 +1,8 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <title>UkrainItch {% block title %}{% endblock %}</title>
@@ -8,7 +10,22 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+    <div class="LeftMenuLine">
+        <div class="LeftMenuTop">
+            <h2>UkrainItch</h2>
+            <a href="/">Головна</a>
+            <a href="#">Новини</a>
+            <a href="#">Ігри</a>
+            <a href="#">Графіка</a>
+            <a href="/about">Про нас</a>
+        </div>
+        <div>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+    <div class="main">
+        {% block content %}
+        {% endblock %}
+    </div>>
 </body>
 </html>
