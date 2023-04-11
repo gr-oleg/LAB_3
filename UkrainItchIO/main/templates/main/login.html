@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
+<html lang="uk" dir="ltr">
   <head>
     <meta charset="utf-8">
    <!----<title>Login Form Design | CodeLab</title>---->
@@ -10,8 +10,9 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="title">Login Form</div>
+      <div class="title">Вхід</div>
       <form action="#">
+        {% csrf_token %}
         <div class="field">
           <input type="text" required>
           <label>Email Address</label>
@@ -23,14 +24,14 @@
         <div class="content">
           <div class="checkbox">
             <input type="checkbox" id="remember-me">
-            <label for="remember-me">Remember me</label>
+            <label for="remember-me">Запамятати мене?</label>
           </div>
-          <div class="pass-link"><a href="#">Forgot password?</a></div>
+          <div class="pass-link"><a href="#">Забули пароль?</a></div>
         </div>
         <div class="field">
-          <input type="submit" value="Login">
+          <input type="submit" value="Вхід">
         </div>
-        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+        <div class="signup-link">Ще не зареєстровані? <a href="#">Реєстрація</a></div>
       </form>
     </div>
   </body>

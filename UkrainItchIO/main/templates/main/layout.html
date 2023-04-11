@@ -13,14 +13,14 @@
     <div class="LeftMenuLine">
         <div class="LeftMenuTop">
             <h2>UkrainItch</h2>
-            <a href="/">Головна</a>
-            <a href="#">Новини</a>
+            <a href="{% url 'HomePage' %}">Головна</a>
+            <a href="{% url 'NewsHomePage' %}">Новини</a>
             <a href="#">Ігри</a>
             <a href="#">Графіка</a>
-            <a href="/about">Про нас</a>
+            <a href="{% url 'About' %}">Про нас</a>
         </div>
-        <div>
-            <a href="/login">Login</a>
+        <div class="Login_Button">
+            <a href="{% url 'LoginPage' %}">Login</a>
         </div>
     </div>
     <div class="main">

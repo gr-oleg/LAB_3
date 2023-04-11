@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}News-Page{% endblock %}
+
+{% block content %}
+<div class="main_page_headerLine">
+  <h2>Світ дивовижних новин та можливостей.</h2>
+  <h3>Світ пригод де тільки ти і такі як ти.</h3>
+</div>
+<div class="newBlock">
+  {% if news %}
+    {% for el in news %}
+      <div class="new">
+        <img src="#" alt="" class="newImg">
+        <h3 class="newTitle">{{ el.title }}</h3>
+        <p class="newIntro">{{ el.anons }}</p>
+      </div>
+
+    {% endfor %}
+  {% else %}
+    <h3 class="noNews">На даний момент записів немає.</h3>
+  {% endif %}
+</div>
+{% endblock %}
+
